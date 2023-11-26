@@ -25,3 +25,17 @@ cd python-flask-vscode-example
 * Install flask
   
 ```pip install flask```
+
+* Created a simple application called app.py with the code 
+
+```from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Hello, Flask!"
+```
+
+* Then ran it with
+
+```python -m flask run```
